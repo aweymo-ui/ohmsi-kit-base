@@ -11,7 +11,11 @@ layout: page
 <details class="section" markdown="1" open>
 <summary><h2 id="overview">Overview</h2></summary>
 
-The Opticolumn Toolkit is a series of scripts developed to embed more accurate, consistent and efficient Optical Character Recognition (OCR) into a wide variety of archival documents.
+__Oral History Multi-Speaker Interpretation-Kit__
+
+This kit uses Whisper speech-to-text models and SpeechBrain _diarization_ (identifying _who is speaking when_) to turn oral history recordings into CSV transcripts of timestamped dialogue separated by speaker. Recordings are batch processed with a selection of scripts, tiered depending on the qualities of the original audio files. Each transcript can then be copy edited against its recording in a local workspace which how the recording will appear on an [Oral History as Data](https://github.com/uidaholib/oral-history-collections-template) site. Keyboard shortcuts for playback, looping, speed and navigation streamline the copyediting process, while supplemental Python workflows batch correct repetitive and time consuming errors.
+
+[GitHub Repository](https://github.com/Scholarly-Projects/ohmsi-kit)
 
 <details class="section" markdown="1">
 <summary><h2 id="purpose">Purpose</h2></summary>
@@ -19,11 +23,8 @@ The Opticolumn Toolkit is a series of scripts developed to embed more accurate, 
 **My intent in developing this OCR toolkit continues to be:**
 
 - Implementing free, open-source models for sustainability.
-- Bypassing large language models for text recognition to avoid vulnerability to hallucination and favor consistent, reproducible output for preservation.
+- Developing transparent, efficient digital interfaces to ensure cultural heritage workers can audit the audio to text model output for accuracy and preservation.
 - Ensuring models don't require an API login or tokens, and run locally after their initial download for privacy.
-- Achieving a significant improvement in the accuracy of both typed and handwritten text materials.
-- Keeping file size growth relatively minimal (5–15 percent), with the addition of the OCR layer.
-- Ensuring that processed files meet the WCAG 2.1 and PDF/A standards for nested archival materials.
 - Making the toolkit freely available to other institutions facing similar challenges.
 
 _Andrew Weymouth, Fall 2026._
@@ -31,38 +32,16 @@ _Andrew Weymouth, Fall 2026._
 </details>
 
 <details class="section" markdown="1">
-<summary><h2 id="tools">Tools</h2></summary>
+<summary><h2 id="Acknowledgements">Acknowledgements</h2></summary>
 
-The Opticolumn Toolkit includes the following resources and applications:
-
-- [Opticolumn](https://github.com/Scholarly-Projects/opticolumn)
-    - Intended for archival scans and designed for type, handwritten text, cursive or a combination of all three. The tool can handle unorthodox arrangements of text, such as annotations and marginalia, but its reading order identification is not as developed as the following script.
-- [Opticolumns](https://github.com/Scholarly-Projects/opticolumns)
-    - Intended for archival scans of large-scale, multi-columned materials, such as newspapers.
-- [Opticolumn_Editor](https://github.com/Scholarly-Projects/opticolumn_editor) (repository private until the completion of 2026 grant project)
-    - Creates OCR using Opticolumn and produces a CSV of the OCR text that can be edited and processed again to incorporate copy edits into the final embedded layer. This method is recommended if you need OCR that surpasses Opticolumn benchmarks detailed in the [OSF Repository for Post-Processing OCR Accuracy Survey](https://osf.io/9f483/overview){:target="_blank" rel="noopener"}.
-- _Forthcoming_:
-    - An Optical Music Recognition tool, to make the library's International Jazz Collection and digitized sheet music fully accessible.
-
-_Step-by-step instructions for installing and running these scripts are included in each tool's setup.md file._
-
-</details>
-
-<details class="section" markdown="1">
-<summary><h2 id="about">About</h2></summary>
-
-- [Transparent Practices: OCR and AI in the Archives, published in _Collections: A Journal for Museum and Archives Professionals_, June 2026](https://journals.sagepub.com/doi/full/10.1177/15501906261439241){:target="_blank" rel="noopener"}
-- [OSF Repository for Post-Processing OCR Accuracy Survey](https://osf.io/9f483/overview){:target="_blank" rel="noopener"}
-- [Presentation Site for the Fall 2026 Renfrew Colloquium on the Project](https://aweymo-ui.github.io/practices-rc/){:target="_blank" rel="noopener"}
-- [Slide Deck for the Presentation](https://indd.adobe.com/view/a5ed9089-f1ec-4962-905a-75fb99c9f259){:target="_blank" rel="noopener"}
-- [Presentation Recording](https://www.youtube.com/watch?v=8a54gpxjTPE){:target="_blank" rel="noopener"}
+The transcript editing workspace is built from the [Oral History as Data collections template](https://github.com/uidaholib/oral-history-collections-template) by the CollectionBuilder contributors and University of Idaho Library Digital Initiatives, used under the MIT License with the contributors' permission; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md). Transcription uses [Whisper](https://github.com/openai/whisper) and diarization uses [SpeechBrain](https://speechbrain.github.io/). The project logo is a collage adapted from _Tarjetas con Dibujos y Con Letras_ (Crane, 1975), a set of instructional ESL learning cards, used here under fair use for educational and non-commercial purposes. Special thanks to Digital Project Managers Maryelizabeth Koepele and Jack Kredell for their contributions to the project.
 
 </details>
 
 <details class="section" markdown="1">
 <summary><h2 id="background">Background</h2></summary>
 
-The Opticolumn Toolkit was developed while overhauling the [University of Idaho Library's](https://www.lib.uidaho.edu/) [digital collections](https://www.lib.uidaho.edu/digital/) to make the collection more discoverable and accessible. The development of the original [Opticolumn](https://github.com/Scholarly-Projects/opticolumn) tool is written about in greater detail in [_Transparent Practices: OCR and AI in the Archives_](https://journals.sagepub.com/doi/full/10.1177/15501906261439241) by Rebecca Hastings and Andrew Weymouth, _Collections: A Journal for Museum and Archives Professionals_, June 2026.
+This kit was developed over time to facilitate the transcription of the [Latah County Oral History Collection](https://www.lib.uidaho.edu/digital/lcoh/), an initiative conducted in the 1970's by the Latah County Historical Society and later digitized by the University of Idaho's [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/) (CDIL) in 2015. The author developed this kit to transcribe the over 550 hour collection over the spring and summer of 2026 to make the material more discoverable for researchers and to provide the Latah County community with more transparent access to their history.
 
 </details>
 

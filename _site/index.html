@@ -4,11 +4,11 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Home | Opticolumn Toolkit</title>
-<meta name="description" content="Base site for Opticolumn Toolkit repositories">
+<title>Home | Oral History Multi-Speaker Interpretation-Kit</title>
+<meta name="description" content="Base site for ohmsi-kit">
 <meta name="keywords" content="">
 <meta name="author" content="Andrew Weymouth">
-<link rel="icon" type="image/png" href="http://localhost:4000/opticolumn-toolkit/favicon.png">
+<link rel="icon" type="image/png" href="http://localhost:4000/ohmsi-kit-base/favicon.png">
 
 <!--
   _      __         __        __           ______               __     __     
@@ -21,23 +21,23 @@
 --> 
    
 <!-- Open Graph meta -->
-<meta property="og:title" content="Home | Opticolumn Toolkit" />
+<meta property="og:title" content="Home | Oral History Multi-Speaker Interpretation-Kit" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="Base site for Opticolumn Toolkit repositories" />
-<meta property="og:image" content="http://localhost:4000/opticolumn-toolkit/images/opti_logo.png" />
-<meta property="og:site_name" content="Opticolumn Toolkit" />
-<meta property="og:url" content="http://localhost:4000/opticolumn-toolkit/" />
+<meta property="og:description" content="Base site for ohmsi-kit" />
+<meta property="og:image" content="http://localhost:4000/ohmsi-kit-base/images/ohmsi_logo.png" />
+<meta property="og:site_name" content="Oral History Multi-Speaker Interpretation-Kit" />
+<meta property="og:url" content="http://localhost:4000/ohmsi-kit-base/" />
 <meta property="og:locale" content="en_US" />
 <!-- schema.org JSON-LD -->
-<script type="application/ld+json">{ "@context":"http://schema.org", "@type":"WebPage", "headline":"Home | Opticolumn Toolkit", "author": { "@type":"Person", "name":"Andrew Weymouth"}, "description":"Base site for Opticolumn Toolkit repositories", "image": "http://localhost:4000/opticolumn-toolkit/images/opti_logo.png", "url":"http://localhost:4000/opticolumn-toolkit/" }</script>
+<script type="application/ld+json">{ "@context":"http://schema.org", "@type":"WebPage", "headline":"Home | Oral History Multi-Speaker Interpretation-Kit", "author": { "@type":"Person", "name":"Andrew Weymouth"}, "description":"Base site for ohmsi-kit", "image": "http://localhost:4000/ohmsi-kit-base/images/ohmsi_logo.png", "url":"http://localhost:4000/ohmsi-kit-base/" }</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="/opticolumn-toolkit/assets/lib/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="/opticolumn-toolkit/assets/css/styles.css">
+<link rel="stylesheet" href="/ohmsi-kit-base/assets/lib/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/ohmsi-kit-base/assets/css/styles.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
 
-<!-- Last build date: 2026-10-05 -->
+<!-- Last build date: 2026-10-07 -->
   </head>
 
   <body class="d-flex flex-column h-100">
@@ -56,9 +56,9 @@
     <header>
     <nav class="navbar navbar-light pb-lg-0 border-bottom" style="background-color: #F0F8FF;">
     <div class="container">
-        <h1 class="navbar-brand" style="white-space: normal; font-size: 2.5rem;"><a href="/opticolumn-toolkit/">
+        <h1 class="navbar-brand" style="white-space: normal; font-size: 2.5rem;"><a href="/ohmsi-kit-base/">
             
-            Opticolumn Toolkit
+            Oral History Multi-Speaker Interpretation-Kit
         </a></h1>
 
         <div class="collapse navbar-collapse justify-content-end" id="mainNav">
@@ -75,95 +75,61 @@
       
       <div class="container my-4">
 <div class="hero-logo-wrap">
-  <img src="/opticolumn-toolkit/images/opti_logo.png" class="hero-logo" alt="Opticolumn logo of a lighthouse on top of a book with the sea in the distance." />
+  <img src="/ohmsi-kit-base/images/ohmsi_logo.png" class="hero-logo" alt="Opticolumn logo of a lighthouse on top of a book with the sea in the distance." />
 </div>
 
 <details class="section" open="">
   <summary><h2 id="overview">Overview</h2></summary>
 
-  <p>The Opticolumn Toolkit is a series of scripts developed to embed more accurate Optical Character Recognition (OCR) into a wide variety of archival documents.</p>
+  <p><strong>Oral History Multi-Speaker Interpretation-Kit</strong></p>
 
-  <p><strong>My goals in developing this OCR kit continue to be:</strong></p>
+  <p>This kit uses Whisper speech-to-text models and SpeechBrain <em>diarization</em> (identifying <em>who is speaking when</em>) to turn oral history recordings into CSV transcripts of timestamped dialogue separated by speaker. Recordings are batch processed with a selection of scripts, tiered depending on the qualities of the original audio files. Each transcript can then be copy edited against its recording in a local workspace which how the recording will appear on an <a href="https://github.com/uidaholib/oral-history-collections-template">Oral History as Data</a> site. Keyboard shortcuts for playback, looping, speed and navigation streamline the copyediting process, while supplemental Python workflows batch correct repetitive and time consuming errors.</p>
 
-  <ul>
-    <li>Implementing free, open-source models for sustainability.</li>
-    <li>Ensuring these models don’t require an API login or tokens, and run locally after their initial download, for data privacy.</li>
-    <li>Achieving a significant improvement in the accuracy of both typed and handwritten text materials.</li>
-    <li>Keeping file size growth relatively minimal (5–15 percent) with the addition of the OCR layer.</li>
-    <li>Ensuring that processed files meet the WCAG definition of “programmatic text”.</li>
-    <li>Avoiding all text recognition models that have demonstrated a vulnerability to hallucination.</li>
-    <li>Making the kit freely available to other institutions facing similar challenges.</li>
-  </ul>
+  <p><a href="https://github.com/Scholarly-Projects/ohmsi-kit">GitHub Repository</a></p>
 
-  <p><em>Andrew Weymouth, Fall 2026.</em></p>
+  <details class="section">
+    <summary><h2 id="purpose">Purpose</h2></summary>
 
-</details>
+    <p><strong>My intent in developing this OCR toolkit continues to be:</strong></p>
 
-<details class="section">
-  <summary><h2 id="tools">Tools</h2></summary>
+    <ul>
+      <li>Implementing free, open-source models for sustainability.</li>
+      <li>Developing transparent, efficient digital interfaces to ensure cultural heritage workers can audit the audio to text model output for accuracy and preservation.</li>
+      <li>Ensuring models don’t require an API login or tokens, and run locally after their initial download for privacy.</li>
+      <li>Making the toolkit freely available to other institutions facing similar challenges.</li>
+    </ul>
 
-  <p>The Opticolumn Toolkit includes the following resources and applications:</p>
+    <p><em>Andrew Weymouth, Fall 2026.</em></p>
 
-  <ul>
-    <li><a href="https://github.com/Scholarly-Projects/opticolumn">Opticolumn</a>
-      <ul>
-        <li>Intended for archival scans and designed for type, handwritten text, cursive or a combination of all three. The tool can handle unorthodox arrangements of text, such as annotations and marginalia, but its reading order arrangement is not as developed as the following script.</li>
-      </ul>
-    </li>
-    <li><a href="https://github.com/Scholarly-Projects/opticolumns">Opticolumns</a>
-      <ul>
-        <li>Intended for archival scans of large-scale, multi-columned materials, such as newspapers.</li>
-      </ul>
-    </li>
-    <li><a href="https://github.com/Scholarly-Projects/opticolumn_editor">Opticolumn_Editor</a>
-      <ul>
-        <li>Creates OCR using Opticolumn and produces a CSV of the OCR text that can be edited and processed again to incorporate copy edits into the final embedded layer. This method is recommended if you need OCR that surpasses the 85–95% accuracy benchmarks of Opticolumn and Opticolumns.</li>
-      </ul>
-    </li>
-    <li><em>Forthcoming</em>:
-      <ul>
-        <li>An Optical Music Recognition tool, to make the library’s International Jazz Collection and digitized sheet music fully accessible.</li>
-      </ul>
-    </li>
-  </ul>
+  </details>
 
-  <p><em>Step-by-step instructions for installing and running these scripts are included in each tool’s setup.md file.</em></p>
+  <details class="section">
+    <summary><h2 id="Acknowledgements">Acknowledgements</h2></summary>
 
-</details>
+    <p>The transcript editing workspace is built from the <a href="https://github.com/uidaholib/oral-history-collections-template">Oral History as Data collections template</a> by the CollectionBuilder contributors and University of Idaho Library Digital Initiatives, used under the MIT License with the contributors’ permission; see <a href="THIRD-PARTY-NOTICES.md">THIRD-PARTY-NOTICES.md</a>. Transcription uses <a href="https://github.com/openai/whisper">Whisper</a> and diarization uses <a href="https://speechbrain.github.io/">SpeechBrain</a>. The project logo is a collage adapted from <em>Tarjetas con Dibujos y Con Letras</em> (Crane, 1975), a set of instructional ESL learning cards, used here under fair use for educational and non-commercial purposes. Special thanks to Digital Project Managers Maryelizabeth Koepele and Jack Kredell for their contributions to the project.</p>
 
-<details class="section">
-  <summary><h2 id="about">About</h2></summary>
+  </details>
 
-  <ul>
-    <li><a href="https://journals.sagepub.com/doi/full/10.1177/15501906261439241" target="_blank" rel="noopener"><em>Transparent Practices: OCR and AI in the Archives</em>, published in <em>Collections: A Journal for Museum and Archives Professionals</em>, June 2026</a></li>
-    <li><a href="https://osf.io/9f483/overview" target="_blank" rel="noopener">OSF Repository for Post-Processing OCR Accuracy Survey</a></li>
-    <li><a href="https://aweymo-ui.github.io/practices-rc/" target="_blank" rel="noopener">Presentation Site for the Fall 2026 Renfrew Colloquium on the Project</a></li>
-    <li><a href="https://indd.adobe.com/view/a5ed9089-f1ec-4962-905a-75fb99c9f259" target="_blank" rel="noopener">Slide Deck for the Presentation</a></li>
-    <li><a href="https://www.youtube.com/watch?v=8a54gpxjTPE" target="_blank" rel="noopener">Presentation Recording</a></li>
-  </ul>
+  <details class="section">
+    <summary><h2 id="background">Background</h2></summary>
 
-</details>
+    <p>This kit was developed over time to facilitate the transcription of the <a href="https://www.lib.uidaho.edu/digital/lcoh/">Latah County Oral History Collection</a>, an initiative conducted in the 1970’s by the Latah County Historical Society and later digitized by the University of Idaho’s <a href="https://cdil.lib.uidaho.edu/">Center for Digital Inquiry and Learning</a> (CDIL) in 2015. The author developed this kit to transcribe the over 550 hour collection over the spring and summer of 2026 to make the material more discoverable for researchers and to provide the Latah County community with more transparent access to their history.</p>
 
-<details class="section">
-  <summary><h2 id="background">Background</h2></summary>
+  </details>
 
-  <p>The Opticolumn Toolkit was developed while overhauling the <a href="https://www.lib.uidaho.edu/">University of Idaho Library’s</a> <a href="https://www.lib.uidaho.edu/digital/">digital collections</a> to make the collection more discoverable and accessible. The development of the original <a href="https://github.com/Scholarly-Projects/opticolumn">Opticolumn</a> tool is written about in greater detail in <a href="https://journals.sagepub.com/doi/full/10.1177/15501906261439241"><em>Transparent Practices: OCR and AI in the Archives</em></a> by Rebecca Hastings and Andrew Weymouth, <em>Collections: A Journal for Museum and Archives Professionals</em>, June 2026.</p>
+  <details class="section">
+    <summary><h2 id="author">Author</h2></summary>
 
-</details>
+    <p><a href="https://aweymo.github.io/base/">Andrew Weymouth</a> is an Assistant Professor with the University of Idaho and the digital initiatives librarian for the Digital Scholarship and Open Strategies department. He focuses on using static web hosting to curate the institution’s special collections and develops digital tools and workflows to enhance transcription, tagging, and image processing to make the university’s media, text, and visual resources more discoverable for researchers. He is completing an MA in history at U of I under the supervision of Dr. Rebecca Scofield, focusing on pageantry and speculation in the Inland Empire.</p>
 
-<details class="section">
-  <summary><h2 id="author">Author</h2></summary>
+  </details>
 
-  <p><a href="https://aweymo.github.io/base/">Andrew Weymouth</a> is an Assistant Professor with the University of Idaho and the digital initiatives librarian for the Digital Scholarship and Open Strategies department. He focuses on using static web hosting to curate the institution’s special collections and develops digital tools and workflows to enhance transcription, tagging, and image processing to make the university’s media, text, and visual resources more discoverable for researchers. He is completing an MA in history at U of I under the supervision of Dr. Rebecca Scofield, focusing on pageantry and speculation in the Inland Empire.</p>
+  <hr />
 
-</details>
+  <p><strong>Content:</strong> CC BY-NC-ND 4.0 <a href="https://github.com/aweymo-ui">Andrew Weymouth</a> 2026 (get <a href="https://github.com/aweymo-ui/ohmsi-kit-base" target="_blank" rel="noopener">source code</a>). <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"></a></p>
+  <p><strong>Theme:</strong> Variation on <a href="https://github.com/evanwill/workshop-template-b" target="_blank" rel="noopener">workshop-template-b</a> by <a href="https://github.com/evanwill/" target="_blank" rel="noopener">evanwill</a></p>
 
-<hr />
-
-<p><strong>Content:</strong> CC BY-NC-ND 4.0 <a href="https://github.com/aweymo-ui">Andrew Weymouth</a> 2026 (get <a href="https://github.com/aweymo-ui/opticolumn-toolkit" target="_blank" rel="noopener">source code</a>). <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"></a></p>
-<p><strong>Theme:</strong> Variation on <a href="https://github.com/evanwill/workshop-template-b" target="_blank" rel="noopener">workshop-template-b</a> by <a href="https://github.com/evanwill/" target="_blank" rel="noopener">evanwill</a></p>
-
-<script>
+  <script>
   // Open a collapsed section when its nav link (or a #hash URL) targets it
   function openTargetSection() {
     var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
@@ -176,6 +142,7 @@
   openTargetSection();
 </script>
 
+</details>
 
 </div>
       
@@ -190,7 +157,7 @@
     </nav>
     <div class="row align-items-center pb-5">
         <div id="footer-title" class="col-md">
-          <a class="h5" href="/opticolumn-toolkit/">Opticolumn Toolkit</a>
+          <a class="h5" href="/ohmsi-kit-base/">Oral History Multi-Speaker Interpretation-Kit</a>
           <br>
           <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0, </a> 2026 <a href="https://github.com/aweymo-ui">Andrew Weymouth</a>
         </div>
@@ -199,7 +166,7 @@
           <script>
             function site_search() {
               var query = document.getElementById("site-search").value;
-              window.open("/opticolumn-toolkit/search/index.html?q=" + encodeURIComponent(query), "_self" );
+              window.open("/ohmsi-kit-base/search/index.html?q=" + encodeURIComponent(query), "_self" );
             }
           </script>
           <form class="form-inline my-2 my-lg-0 float-end" role="search" id="search" onsubmit="site_search(); return false;">
@@ -217,7 +184,7 @@
 </footer>
 
     <!-- Bootstrap JS bundle -->
-<script src="/opticolumn-toolkit/assets/lib/bootstrap.bundle.min.js"></script>
+<script src="/ohmsi-kit-base/assets/lib/bootstrap.bundle.min.js"></script>
 <!-- load other optional js -->
 
 
