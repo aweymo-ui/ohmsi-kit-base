@@ -1,0 +1,315 @@
+body {
+  font-family: "EB Garamond", serif;
+  line-height: 1.7;
+  background-color: #FDFEFF;
+}
+
+/* Set Playfair as the default font for all header text */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair", serif;
+}
+
+.bg-light-blue {
+  background-color: #FDFEFF;
+}
+
+/* top nav: !important overrides the inline background-color in the header include */
+.navbar {
+  background-color: #FDFEFF !important;
+}
+
+.symbol-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.symbol {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #00448c;
+}
+
+/* consistent vertical rhythm instead of <br> */
+main h1, main h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+main h1:first-child, main h2:first-child {
+  margin-top: 0;
+}
+
+main ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* one-pager: smooth scrolling, and headings don't hide under the navbar */
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 1.5rem;
+}
+
+details.section {
+  border-bottom: 1px solid rgba(0, 68, 140, 0.2);
+  padding: 1rem 0;
+}
+details.section > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+details.section > summary::-webkit-details-marker {
+  display: none;
+}
+details.section > summary h2 {
+  margin: 0;
+}
+details.section > summary::after {
+  content: "";
+  flex-shrink: 0;
+  width: 0.6em;
+  height: 0.6em;
+  border-right: 2px solid #00448c;
+  border-bottom: 2px solid #00448c;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  margin-right: 0.5rem;
+}
+details.section > summary:hover h2 {
+  color: #00448c;
+}
+details.section > summary:focus-visible {
+  outline: 2px solid #00448c;
+  outline-offset: 4px;
+}
+details.section[open] > summary::after {
+  transform: rotate(-135deg);
+}
+details.section[open] > summary {
+  margin-bottom: 1rem;
+}
+
+.hero-logo-wrap {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  position: relative;
+}
+.hero-logo-wrap::before { /* soft lighthouse glow behind the logo */
+  content: "";
+  position: absolute;
+  inset: 10% 25%;
+  background: radial-gradient(circle, rgba(255, 223, 128, 0.55), transparent 65%);
+  filter: blur(20px);
+  animation: beam 4s ease-in-out infinite;
+  z-index: 0;
+}
+
+.hero-logo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .hero-logo {
+    width: 50%;
+  }
+}
+.hero-logo {
+  /* elliptical vignette: corners fade out, center stays solid */
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at center, #000 60%, rgba(0, 0, 0, 0.25) 100%);
+  mask-image: radial-gradient(ellipse 70% 70% at center, #000 60%, rgba(0, 0, 0, 0.25) 100%);
+  animation: rise-in 1s ease-out both;
+  transition: transform 0.4s ease;
+}
+.hero-logo:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes beam {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo, .hero-logo-wrap::before {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+/* tweak defaults if variables set */
+body {
+  font-size: 1.15rem;
+  color: #000000;
+}
+
+a {
+  color: #00448c;
+}
+a:hover {
+  color: #000000;
+}
+
+/* change container size for easier reading */
+@media (min-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 750px;
+  }
+}
+/* skip nav for accessibility, based on https://webaim.org/techniques/skipnav/ */
+#skip-to-content a {
+  padding: 6px;
+  position: absolute;
+  top: -200px;
+  left: 0px;
+  color: white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-bottom-right-radius: 8px;
+  background: #BF1722;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 100;
+}
+
+#skip-to-content a:focus {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  outline-color: transparent;
+  -webkit-transition: top 0.1s ease-in;
+  transition: top 0.1s ease-in;
+}
+
+/* remove link underline */
+a {
+  text-decoration: none;
+}
+
+/* add decorative borders  */
+header .nav-tabs {
+  border-bottom: none;
+}
+header .nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+
+footer .nav-pills .nav-link.active {
+  background-color: #00448c;
+}
+footer .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+}
+footer .nav-link.active {
+  color: rgba(0, 0, 0, 0.9);
+}
+footer .nav-link:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
+}
+
+#footer-title a {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* scroll to top */
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  z-index: 99;
+  font-size: 40px;
+}
+
+/* bootstrap icons tweaks */
+.bi {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.1em;
+}
+
+/* feature include tweaks */
+.feature-alert p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .feature-w-25 {
+    width: 25% !important;
+  }
+  .feature-w-50 {
+    width: 50% !important;
+  }
+  .feature-w-75 {
+    width: 75% !important;
+  }
+  .feature-w-100 {
+    width: 100% !important;
+  }
+}
+/* code blocks */
+div.highlighter-rouge {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  overflow: auto;
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+}
+
+/* github style blockquotes */
+blockquote {
+  border-left: 4px solid #828282;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 2rem;
+}
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/* term highlighting */
+.term {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* add your tweaks here! */
+
+/*# sourceMappingURL=styles.css.map */

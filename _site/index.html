@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Home | Opticolumn Toolkit</title>
+<meta name="description" content="Base site for Opticolumn Toolkit repositories">
+<meta name="keywords" content="">
+<meta name="author" content="Andrew Weymouth">
+<link rel="icon" type="image/png" href="http://localhost:4000/opticolumn-toolkit/favicon.png">
+
+<!--
+  _      __         __        __           ______               __     __     
+ | | /| / /__  ____/ /__ ___ / /  ___  ___/_  __/__ __ _  ___  / /__ _/ /____ 
+ | |/ |/ / _ \/ __/  '_/(_-</ _ \/ _ \/ _ \/ / / -_)  ' \/ _ \/ / _ `/ __/ -_)
+ |__/|__/\___/_/ /_/\_\/___/_//_/\___/ .__/_/  \__/_/_/_/ .__/_/\_,_/\__/\__/ 
+                                    /_/                /_/                    
+
+    built with workshop-template-b, evanwill, https://github.com/evanwill/workshop-template-b
+--> 
+   
+<!-- Open Graph meta -->
+<meta property="og:title" content="Home | Opticolumn Toolkit" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Base site for Opticolumn Toolkit repositories" />
+<meta property="og:image" content="http://localhost:4000/opticolumn-toolkit/images/opti_logo.png" />
+<meta property="og:site_name" content="Opticolumn Toolkit" />
+<meta property="og:url" content="http://localhost:4000/opticolumn-toolkit/" />
+<meta property="og:locale" content="en_US" />
+<!-- schema.org JSON-LD -->
+<script type="application/ld+json">{ "@context":"http://schema.org", "@type":"WebPage", "headline":"Home | Opticolumn Toolkit", "author": { "@type":"Person", "name":"Andrew Weymouth"}, "description":"Base site for Opticolumn Toolkit repositories", "image": "http://localhost:4000/opticolumn-toolkit/images/opti_logo.png", "url":"http://localhost:4000/opticolumn-toolkit/" }</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/opticolumn-toolkit/assets/lib/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/opticolumn-toolkit/assets/css/styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+
+<!-- Last build date: 2026-10-05 -->
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+    <header>
+    <nav class="navbar navbar-light pb-lg-0 border-bottom" style="background-color: #F0F8FF;">
+    <div class="container">
+        <h1 class="navbar-brand" style="white-space: normal; font-size: 2.5rem;"><a href="/opticolumn-toolkit/">
+            
+            Opticolumn Toolkit
+        </a></h1>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+            <ul class="navbar-nav nav-tabs justify-content-end">
+            
+            </ul>  
+        </div>
+    </div>
+</nav>
+
+    </header>
+
+    <main id="maincontent" role="main" aria-label="Content" class="flex-shrink-0">
+      
+      <div class="container my-4">
+<div class="hero-logo-wrap">
+  <img src="/opticolumn-toolkit/images/opti_logo.png" class="hero-logo" alt="Opticolumn logo of a lighthouse on top of a book with the sea in the distance." />
+</div>
+
+<details class="section" open="">
+  <summary><h2 id="overview">Overview</h2></summary>
+
+  <p>The Opticolumn Toolkit is a series of scripts developed to embed more accurate Optical Character Recognition (OCR) into a wide variety of archival documents.</p>
+
+  <p><strong>My goals in developing this OCR kit continue to be:</strong></p>
+
+  <ul>
+    <li>Implementing free, open-source models for sustainability.</li>
+    <li>Ensuring these models don’t require an API login or tokens, and run locally after their initial download, for data privacy.</li>
+    <li>Achieving a significant improvement in the accuracy of both typed and handwritten text materials.</li>
+    <li>Keeping file size growth relatively minimal (5–15 percent) with the addition of the OCR layer.</li>
+    <li>Ensuring that processed files meet the WCAG definition of “programmatic text”.</li>
+    <li>Avoiding all text recognition models that have demonstrated a vulnerability to hallucination.</li>
+    <li>Making the kit freely available to other institutions facing similar challenges.</li>
+  </ul>
+
+  <p><em>Andrew Weymouth, Fall 2026.</em></p>
+
+</details>
+
+<details class="section">
+  <summary><h2 id="tools">Tools</h2></summary>
+
+  <p>The Opticolumn Toolkit includes the following resources and applications:</p>
+
+  <ul>
+    <li><a href="https://github.com/Scholarly-Projects/opticolumn">Opticolumn</a>
+      <ul>
+        <li>Intended for archival scans and designed for type, handwritten text, cursive or a combination of all three. The tool can handle unorthodox arrangements of text, such as annotations and marginalia, but its reading order arrangement is not as developed as the following script.</li>
+      </ul>
+    </li>
+    <li><a href="https://github.com/Scholarly-Projects/opticolumns">Opticolumns</a>
+      <ul>
+        <li>Intended for archival scans of large-scale, multi-columned materials, such as newspapers.</li>
+      </ul>
+    </li>
+    <li><a href="https://github.com/Scholarly-Projects/opticolumn_editor">Opticolumn_Editor</a>
+      <ul>
+        <li>Creates OCR using Opticolumn and produces a CSV of the OCR text that can be edited and processed again to incorporate copy edits into the final embedded layer. This method is recommended if you need OCR that surpasses the 85–95% accuracy benchmarks of Opticolumn and Opticolumns.</li>
+      </ul>
+    </li>
+    <li><em>Forthcoming</em>:
+      <ul>
+        <li>An Optical Music Recognition tool, to make the library’s International Jazz Collection and digitized sheet music fully accessible.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><em>Step-by-step instructions for installing and running these scripts are included in each tool’s setup.md file.</em></p>
+
+</details>
+
+<details class="section">
+  <summary><h2 id="about">About</h2></summary>
+
+  <ul>
+    <li><a href="https://journals.sagepub.com/doi/full/10.1177/15501906261439241" target="_blank" rel="noopener"><em>Transparent Practices: OCR and AI in the Archives</em>, published in <em>Collections: A Journal for Museum and Archives Professionals</em>, June 2026</a></li>
+    <li><a href="https://osf.io/9f483/overview" target="_blank" rel="noopener">OSF Repository for Post-Processing OCR Accuracy Survey</a></li>
+    <li><a href="https://aweymo-ui.github.io/practices-rc/" target="_blank" rel="noopener">Presentation Site for the Fall 2026 Renfrew Colloquium on the Project</a></li>
+    <li><a href="https://indd.adobe.com/view/a5ed9089-f1ec-4962-905a-75fb99c9f259" target="_blank" rel="noopener">Slide Deck for the Presentation</a></li>
+    <li><a href="https://www.youtube.com/watch?v=8a54gpxjTPE" target="_blank" rel="noopener">Presentation Recording</a></li>
+  </ul>
+
+</details>
+
+<details class="section">
+  <summary><h2 id="background">Background</h2></summary>
+
+  <p>The Opticolumn Toolkit was developed while overhauling the <a href="https://www.lib.uidaho.edu/">University of Idaho Library’s</a> <a href="https://www.lib.uidaho.edu/digital/">digital collections</a> to make the collection more discoverable and accessible. The development of the original <a href="https://github.com/Scholarly-Projects/opticolumn">Opticolumn</a> tool is written about in greater detail in <a href="https://journals.sagepub.com/doi/full/10.1177/15501906261439241"><em>Transparent Practices: OCR and AI in the Archives</em></a> by Rebecca Hastings and Andrew Weymouth, <em>Collections: A Journal for Museum and Archives Professionals</em>, June 2026.</p>
+
+</details>
+
+<details class="section">
+  <summary><h2 id="author">Author</h2></summary>
+
+  <p><a href="https://aweymo.github.io/base/">Andrew Weymouth</a> is an Assistant Professor with the University of Idaho and the digital initiatives librarian for the Digital Scholarship and Open Strategies department. He focuses on using static web hosting to curate the institution’s special collections and develops digital tools and workflows to enhance transcription, tagging, and image processing to make the university’s media, text, and visual resources more discoverable for researchers. He is completing an MA in history at U of I under the supervision of Dr. Rebecca Scofield, focusing on pageantry and speculation in the Inland Empire.</p>
+
+</details>
+
+<hr />
+
+<p><strong>Content:</strong> CC BY-NC-ND 4.0 <a href="https://github.com/aweymo-ui">Andrew Weymouth</a> 2026 (get <a href="https://github.com/aweymo-ui/opticolumn-toolkit" target="_blank" rel="noopener">source code</a>). <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"></a></p>
+<p><strong>Theme:</strong> Variation on <a href="https://github.com/evanwill/workshop-template-b" target="_blank" rel="noopener">workshop-template-b</a> by <a href="https://github.com/evanwill/" target="_blank" rel="noopener">evanwill</a></p>
+
+<script>
+  // Open a collapsed section when its nav link (or a #hash URL) targets it
+  function openTargetSection() {
+    var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (el) {
+      var d = el.closest('details');
+      if (d) d.open = true;
+    }
+  }
+  window.addEventListener('hashchange', openTargetSection);
+  openTargetSection();
+</script>
+
+
+</div>
+      
+    </main>
+
+    <footer class="site-footer bg-light-blue mt-auto">
+  <div class="container">
+    <nav class="mt-3 mb-4">
+      <ul class="nav nav-pills nav-fill">
+        
+      </ul>
+    </nav>
+    <div class="row align-items-center pb-5">
+        <div id="footer-title" class="col-md">
+          <a class="h5" href="/opticolumn-toolkit/">Opticolumn Toolkit</a>
+          <br>
+          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0, </a> 2026 <a href="https://github.com/aweymo-ui">Andrew Weymouth</a>
+        </div>
+        <div class="col-md">
+          
+          <script>
+            function site_search() {
+              var query = document.getElementById("site-search").value;
+              window.open("/opticolumn-toolkit/search/index.html?q=" + encodeURIComponent(query), "_self" );
+            }
+          </script>
+          <form class="form-inline my-2 my-lg-0 float-end" role="search" id="search" onsubmit="site_search(); return false;">
+            <div class="input-group">
+              <input id="site-search" class="form-control" type="text" placeholder="Search" aria-label="Search box">
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> </svg><span class="visually-hidden">submit search</span></button>
+              </div>
+            </div>
+          </form>
+          
+        </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- Bootstrap JS bundle -->
+<script src="/opticolumn-toolkit/assets/lib/bootstrap.bundle.min.js"></script>
+<!-- load other optional js -->
+
+
+
+<script>
+    // When the user scrolls down from the top of the document, show the button
+    window.onscroll = function () {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            document.getElementById("scroll-to-top").style.display = "block";
+            document.getElementById("scroll-to-top").style.color = "#00448c"; // Change button color to #00448c
+        } else {
+            document.getElementById("scroll-to-top").style.display = "none";
+        }
+    }
+    // scroll to top function
+    function scrollToTop() {
+        window.scroll({
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    }
+</script>
+<button id="scroll-to-top" type="button" class="btn btn-link btn-lg" onclick="scrollToTop();" title="Back to Top" aria-label="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/> </svg>
+</button>
+
+
+
+  </body>
+
+</html>

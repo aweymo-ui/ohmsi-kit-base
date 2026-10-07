@@ -1,0 +1,161 @@
+---
+# front matter
+---
+
+// ---------- Variables (must come before the @import) ----------
+
+// page background color
+$bg-color: #FDFEFF;
+
+// set color for footer nav buttons (optional!)
+$nav-pills: #00448c;
+
+// Tweak body text and link color (optional!)
+$text-color: #000000 !default;
+$link-color: #00448c !default;
+$base-font-size: 1.15rem;
+
+// limit container size to make reading easier (optional!)
+$container-max: 750px;
+
+// ---------- Base ----------
+
+body {
+  font-family: 'EB Garamond', serif;
+  line-height: 1.7;
+  background-color: $bg-color;
+}
+
+/* Set Playfair as the default font for all header text */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair', serif;
+}
+
+.bg-light-blue {
+  background-color: $bg-color;
+}
+
+/* top nav: !important overrides the inline background-color in the header include */
+.navbar {
+  background-color: $bg-color !important;
+}
+
+.symbol-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.symbol {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #00448c;
+}
+
+/* consistent vertical rhythm instead of <br> */
+main h1, main h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+main h1:first-child, main h2:first-child { margin-top: 0; }
+main ul li { margin-bottom: .5rem; }
+
+/* one-pager: smooth scrolling, and headings don't hide under the navbar */
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 1.5rem; }
+
+// ---------- Collapsible sections ----------
+
+details.section {
+  border-bottom: 1px solid rgba(0, 68, 140, .2);
+  padding: 1rem 0;
+
+  > summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::-webkit-details-marker { display: none; }
+
+    h2 { margin: 0; }
+
+    &::after {
+      content: "";
+      flex-shrink: 0;
+      width: .6em;
+      height: .6em;
+      border-right: 2px solid #00448c;
+      border-bottom: 2px solid #00448c;
+      transform: rotate(45deg);
+      transition: transform .2s ease;
+      margin-right: .5rem;
+    }
+
+    &:hover h2 { color: #00448c; }
+    &:focus-visible { outline: 2px solid #00448c; outline-offset: 4px; }
+  }
+
+  &[open] > summary::after { transform: rotate(-135deg); }
+  &[open] > summary { margin-bottom: 1rem; }
+}
+
+// ---------- Hero logo ----------
+
+.hero-logo-wrap {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  position: relative;
+
+  &::before {               /* soft lighthouse glow behind the logo */
+    content: "";
+    position: absolute;
+    inset: 10% 25%;
+    background: radial-gradient(circle, rgba(255, 223, 128, .55), transparent 65%);
+    filter: blur(20px);
+    animation: beam 4s ease-in-out infinite;
+    z-index: 0;
+  }
+}
+
+.hero-logo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  @media (min-width: 768px) { width: 50%; }
+
+  /* elliptical vignette: corners fade out, center stays solid */
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at center, #000 60%, rgba(0, 0, 0, .25) 100%);
+          mask-image: radial-gradient(ellipse 70% 70% at center, #000 60%, rgba(0, 0, 0, .25) 100%);
+
+  animation: rise-in 1s ease-out both;
+  transition: transform .4s ease;
+
+  &:hover { transform: translateY(-4px) scale(1.02); }
+}
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(15px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes beam {
+  0%, 100% { opacity: .3; transform: scale(.9); }
+  50%      { opacity: .9; transform: scale(1.05); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo, .hero-logo-wrap::before { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+// ---------- Import partials ----------
+@import
+  "template", "custom"
+;
