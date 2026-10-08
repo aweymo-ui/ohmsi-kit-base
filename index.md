@@ -13,14 +13,14 @@ layout: page
 
 __Oral History Multi-Speaker Interpretation-Kit__
 
-This kit uses Whisper speech-to-text models and SpeechBrain _diarization_ (identifying _who is speaking when_) to turn oral history recordings into CSV transcripts of timestamped dialogue separated by speaker. Recordings are batch processed with a selection of scripts, tiered depending on the qualities of the original audio files. Each transcript can then be copy edited against its recording in a local workspace which how the recording will appear on an [Oral History as Data](https://github.com/uidaholib/oral-history-collections-template) site. Keyboard shortcuts for playback, looping, speed and navigation streamline the copyediting process, while supplemental Python workflows batch correct repetitive and time consuming errors.
+This kit uses Whisper speech-to-text models and SpeechBrain _diarization_ (identifying _who is speaking when_) to turn oral history recordings into CSV transcripts of timestamped dialogue separated by speaker. Recordings are batch processed with a selection of scripts, tiered depending on the qualities of the original audio files. Each transcript can then be copy edited against its recording in a local workspace which is how the recording will appear on an [Oral History as Data](https://github.com/uidaholib/oral-history-collections-template) site. Keyboard shortcuts for playback, looping, speed and navigation streamline the copyediting process, while supplemental Python workflows batch correct repetitive and time consuming errors.
 
 [GitHub Repository](https://github.com/Scholarly-Projects/ohmsi-kit)
 
 <details class="section" markdown="1">
 <summary><h2 id="purpose">Purpose</h2></summary>
 
-**My intent in developing this OCR toolkit continues to be:**
+**My intent in developing this audio to text toolkit continues to be:**
 
 - Implementing free, open-source models for sustainability.
 - Developing transparent, efficient digital interfaces to ensure cultural heritage workers can audit the audio to text model output for accuracy and preservation.
