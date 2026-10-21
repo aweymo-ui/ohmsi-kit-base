@@ -34,7 +34,7 @@ _Andrew Weymouth, Fall 2026._
 <details class="section" markdown="1">
 <summary><h2 id="Acknowledgements">Acknowledgements</h2></summary>
 
-The transcript editing workspace is built from the [Oral History as Data collections template](https://github.com/uidaholib/oral-history-collections-template) by the CollectionBuilder contributors and University of Idaho Library Digital Initiatives, used under the MIT License with the contributors' permission; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md). Transcription uses [Whisper](https://github.com/openai/whisper) and diarization uses [SpeechBrain](https://speechbrain.github.io/). The project logo is a collage adapted from _Tarjetas con Dibujos y Con Letras_ (Crane, 1975), a set of instructional ESL learning cards, used here under fair use for educational and non-commercial purposes. Special thanks to Digital Project Managers Maryelizabeth Koepele and Jack Kredell for their contributions to the project.
+The transcript editing workspace is built from the [Oral History as Data collections template](https://github.com/uidaholib/oral-history-collections-template) by the CollectionBuilder contributors and University of Idaho Library Digital Initiatives, used under the MIT License with the contributors' permission; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md). Transcription uses [Whisper](https://github.com/openai/whisper) and diarization uses [SpeechBrain](https://speechbrain.github.io/). The project logo is a collage adapted from _Tarjetas con Dibujos y Con Letras_ (Crane, 1975), a set of instructional ESL learning cards, used here under fair use for educational and non-commercial purposes.
 
 </details>
 
