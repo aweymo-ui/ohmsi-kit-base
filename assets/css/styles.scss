@@ -155,6 +155,48 @@ details.section {
   html { scroll-behavior: auto; }
 }
 
+// ---------- Sister-site link ----------
+
+.sister-site {
+  text-align: center;
+  margin: 3rem 0 2rem;
+
+  a {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .25rem;
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  .sister-site-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: .5rem;
+    -webkit-mask-image: radial-gradient(ellipse 70% 70% at center, #000 60%, rgba(0, 0, 0, .25) 100%);
+            mask-image: radial-gradient(ellipse 70% 70% at center, #000 60%, rgba(0, 0, 0, .25) 100%);
+    transition: transform .3s ease;
+  }
+
+  .sister-site-label {
+    font-size: .85rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    opacity: .7;
+  }
+
+  .sister-site-title {
+    font-family: 'Playfair', serif;
+    font-size: 1.3rem;
+    color: $link-color;
+  }
+
+  a:hover .sister-site-logo { transform: translateY(-3px); }
+  a:hover .sister-site-title { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid $link-color; outline-offset: 6px; }
+}
+
 // ---------- Import partials ----------
 @import
   "template", "custom"
