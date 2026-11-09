@@ -54,7 +54,7 @@ This kit was developed over time to facilitate the transcription of the [Latah C
 
 <aside class="sister-site" markdown="0">
   <a href="{{ site.sister-site-url }}">
-    <img src="{{ site.sister-site-logo | relative_url }}" alt="" class="sister-site-logo">
+    <img src="{{ site.sister-site-logo | relative_url }}" alt="{{ site.sister-site-logo-alt }}" class="sister-site-logo">
     <span class="sister-site-label">Companion toolkit</span>
     <span class="sister-site-title">{{ site.sister-site-title }} &rarr;</span>
   </a>

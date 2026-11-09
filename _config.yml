@@ -73,7 +73,7 @@ markdown: kramdown
 sister-site-title: Optical Character Recognition Tools
 sister-site-url: https://aweymo-ui.github.io/opticolumn-toolkit/
 sister-site-logo: /images/opti_logo.png
-sister-site-logo-alt: Opticolumn logo of a lighthouse on top of a book with the sea in the distance.
+sister-site-logo-alt: Opticolumn logo of a lighthouse on top of a green book with the sea in the distance.
 
 # THEME ICONS [optional!]
 # default icons can be overridden or new icons can be added using "icons" object
