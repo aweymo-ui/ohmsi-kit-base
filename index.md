@@ -5,7 +5,7 @@ layout: page
 
 <div class="hero-logo-wrap">
   <img src="{{ '/images/ohmsi_logo.png' | relative_url }}" class="hero-logo"
-       alt="Opticolumn logo of a lighthouse on top of a book with the sea in the distance.">
+       alt="ohmsi-kit logo of a lighthouse on top of a red radio with the sea in the distance.">
 </div>
 
 <details class="section" markdown="1" open>
