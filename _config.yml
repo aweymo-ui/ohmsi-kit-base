@@ -70,6 +70,10 @@ exclude: [README.md, LICENSE, assets/lib/README.md]
 # Build settings
 markdown: kramdown
 
+sister-site-title: Optical Character Recognition Tools
+sister-site-url: https://aweymo-ui.github.io/opticolumn-toolkit/
+sister-site-logo: /images/opti_logo.png
+
 # THEME ICONS [optional!]
 # default icons can be overridden or new icons can be added using "icons" object
 # the template uses Bootstrap Icons, https://icons.getbootstrap.com/
